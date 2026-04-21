@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* con01 */
+.con01 {
+  /* background-color: pink; */
+}
+
+.con01 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.con01 h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 100px;
+  text-align: left;
+}
+
+/* con03 */
+
+.con03 {
+  background-image: url(img/rainbow.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.con03 h2 {
+  font-size: 120px;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-text-stroke: 2px lightgrey;
+  color: transparent;
+  /* webkit는 아직 상용화가 다 되지 않아 일부 pc에서는 안 보일 수 있다는 의미를 지님 */
+  /* text-transform: uppercase; */
+  /* 대문자로 모두 바꿈 */
+  text-align: center;
+  padding-top: 100px;
+  font-family: "Playwrite NO", cursive;
+}
+
+.con03 ul {
+  position: relative;
+  margin-top: 300px;
+}
+
+.con03 li {
+  width: 250px;
+  height: 350px;
+  /* background-color: pink; */
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+}
+
+.con03 li:nth-child(1) {
+  background-image: url(img/pic1.jpg);
+  transform: translate(-50%, -50%) rotate(12deg);
+}
+
+.con03 li:nth-child(2) {
+  background-image: url(img/pic2.jpg);
+  transform: translate(-50%, -50%) rotate(-12deg);
+}
+.con03 li:nth-child(3) {
+  background-image: url(img/pic3.jpg);
+  transform: translate(-50%, -50%) rotate(20deg);
+}
+.con03 li:nth-child(4) {
+  background-image: url(img/pic4.jpg);
+  transform: translate(-50%, -50%) rotate(-20deg);
+}
+.con03 li:nth-child(5) {
+  background-image: url(img/pic5.jpg);
+  transform: translate(-50%, -50%) rotate(30deg);
+}
+.con03 li:nth-child(6) {
+  background-image: url(img/pic6.jpg);
+  transform: translate(-50%, -50%) rotate(-30deg);
+}
+.con03 li:nth-child(7) {
+  background-image: url(img/pic7.jpg);
+  transform: translate(-50%, -50%);
+}
+
+/* con04 */
+.con04 {
+  background-image: url(img/dominikrh-sea-7484743.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.con04 h2 {
+  font-size: 120px;
+  -webkit-text-stroke: 2px lightskyblue;
+  color: transparent;
+  /* webkit는 아직 상용화가 다 되지 않아 일부 pc에서는 안 보일 수 있다는 의미를 지님 */
+  /* text-transform: uppercase; */
+  /* 대문자로 모두 바꿈 */
+  text-align: center;
+  padding-top: 100px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.con04 ul {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+  gap: 1rem;
+}
+
+.con04 li {
+  /* background-color: orange; */
+  width: calc(100% / 4);
+  height: 300px;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222;
+  font-size: 1.2rem;
+  transform: translateY(200px);
+}
+
+.con04 li img {
+  width: 100%;
+  height: 100%;
+}
+
+/* con02 */
+
+.con02 {
+  padding: 200px 0px;
+}
+
+/* title */
+.con02 .title {
+  width: 100%;
+  /* height: 100%; */
+  font-size: 170px;
+  text-align: center;
+  /* padding-top: 200px; */
+}
+
+.con02 .work {
+  font-style: italic;
+  font-size: 220px;
+}
+
+/* worklist */
+.con02 .worklist {
+  width: 70%;
+  margin: 0px auto;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.con02 li {
+  width: 45%;
+  margin-top: 200px;
+}
+
+.con02 li:nth-child(2n) {
+  margin-top: 100px;
+}
+
+.con02 img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+/* textBox */
+.con02 h3 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 20px 0px 10px 5px;
+}
+
+.con02 .info {
+  display: flex;
+  justify-content: space-between;
+  color: #999;
+}
