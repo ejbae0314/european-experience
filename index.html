@@ -139,7 +139,7 @@
           scrollTrigger: {
             trigger: ".con03",
             start: "0% 0%",
-            end: "30% 40%",
+            end: "+=5000",
             //   top = 0%, bottom = 100%, center = 50%
             scrub: 2,
             pin: true,
@@ -148,14 +148,14 @@
         }) //뒤에 생성되는 ; 지워야함
 
         //from에는 y값, to에는 opacity:1
-        .fromTo(".con03 .card01", { y: 400 }, { y: 0, opacity: 1 })
+        .fromTo(".con03 .card01", { y: 400, duration: 10 }, { y: 0, opacity: 1 }, 0.5)
         //뒤에 생성되는 ; 지워야함
-        .fromTo(".con03 .card02", { y: 400 }, { y: 0, opacity: 1 })
-        .fromTo(".con03 .card03", { y: 400 }, { y: 0, opacity: 1 })
-        .fromTo(".con03 .card04", { y: 400 }, { y: 0, opacity: 1 })
-        .fromTo(".con03 .card05", { y: 400 }, { y: 0, opacity: 1 })
-        .fromTo(".con03 .card06", { y: 400 }, { y: 0, opacity: 1 })
-        .fromTo(".con03 .card07", { y: 400 }, { y: 0, opacity: 1 });
+        .fromTo(".con03 .card02", { y: 400}, { y: 0, opacity: 1, duration:1 }, 4)
+        .fromTo(".con03 .card03", { y: 400}, { y: 0, opacity: 1, duration:1  }, 8)
+        .fromTo(".con03 .card04", { y: 400}, { y: 0, opacity: 1, duration:1  }, 12)
+        .fromTo(".con03 .card05", { y: 400}, { y: 0, opacity: 1, duration:1  }, 16)
+        .fromTo(".con03 .card06", { y: 400}, { y: 0, opacity: 1, duration:1  }, 20)
+        .fromTo(".con03 .card07", { y: 400}, { y: 0, opacity: 1, duration:1  }, 24)
 
  gsap.timeline({
           scrollTrigger: {
@@ -172,7 +172,7 @@ gsap
         .timeline({
           scrollTrigger: {
             trigger: ".con04 ul",
-            start: "top 90%",
+            start: "0% 40%",
             end: "bottom 70%",
             scrub: 2,
             // markers: true,
