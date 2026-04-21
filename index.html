@@ -160,10 +160,10 @@
  gsap.timeline({
           scrollTrigger: {
             trigger: ".con03",
-            start: "0% 0%",
-            end: "10% 0%",
+            start: "-60% top",
+            end: "-60% top",
             scrub: 3,
-            // markers: true,
+            markers: true,
           },
         })
         .fromTo(".con03 h2", {x: "-50px", color:"#000", opacity:0}, {x: 0, color:"yellow", opacity:1})
@@ -171,11 +171,11 @@
 gsap
         .timeline({
           scrollTrigger: {
-            trigger: ".con04 ul",
-            start: "0% 40%",
-            end: "bottom 70%",
+            trigger: ".con04",
+            start: "-50% 20%",
+            end: "-30% 70%",
             scrub: 2,
-            // markers: true,
+            // markers: true
           },
         })
         .to(".con04 li:nth-child(1)", { y: 0, duration: 1 }, 0.2)
